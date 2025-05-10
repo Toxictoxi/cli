@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# Watch a bash
+# Watch changes to a file or bash commands
 
-if [ $# -eq 1 ]; then
-    watch -t -c -n 60 "$1"
+if [ $# -eq 2 ]; then
+    watch -t -c -n "$1" "$2"
 else
-    echo help: watchdog.sh [path/command]
+    echo help: watchdog.sh [seconds] [path/command]
 fi
